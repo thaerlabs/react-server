@@ -1,0 +1,43 @@
+{
+  "name": "react-server",
+  "version": "1.0.0",
+  "description": "server side react",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV='development' nodemon index.js & webpack-dev-server --progress --color",
+    "start": "NODE_ENV='production' nodemon index.js & rm -rf ./public/assets/* & npm run webpack-production",
+    "webpack-production": "webpack -p --config webpack.production.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thaer Abbas",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "history": "^1.11.1",
+    "http-proxy": "^1.11.2",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-beta3",
+    "react-redux": "^3.1.0",
+    "react-router": "^1.0.0-rc1",
+    "redux": "^3.0.2",
+    "redux-thunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.16.0",
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-util": "^3.0.6",
+    "node-bourbon": "^4.2.3",
+    "node-sass": "^3.3.3",
+    "nodemon": "^1.4.1",
+    "sass-loader": "^3.0.0",
+    "style-loader": "^0.12.3",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
