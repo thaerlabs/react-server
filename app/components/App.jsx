@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Provider } from 'react-redux';
 import Header from './Header';
-import numeral from 'numeral';
 
 if (process.env.BROWSER) {
   require('../styles/App.scss');
